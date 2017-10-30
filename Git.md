@@ -50,5 +50,18 @@ git clone https://github.com/git/git.git --depth=1
 # apt-get install fcgiwrap spawn-fcgi
 ```
 
+# Install fcgiwrap with source
+
+```
+ apt-get  install pkg-config
+```
+
+
+```
+apt-get install libcgi-session-perl
+
+locate CGI.pm
+```
+
 
 

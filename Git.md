@@ -63,5 +63,18 @@ apt-get install libcgi-session-perl
 locate CGI.pm
 ```
 
+# Resolve http  client intended to send too large chunked body
+# 413 Request Entity Too Large
 
+> nginx 
+```
+client_max_body_size 100m
+```
 
+> git 
+
+```
+git config --global http.postBuffer 157286400
+```
+
+# Auth Failed git project dir permisson 

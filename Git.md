@@ -77,4 +77,8 @@ client_max_body_size 100m
 git config --global http.postBuffer 157286400
 ```
 
-# Auth Failed git project dir permisson 
+# Auth Failed git project dir permisson
+
+```
+git pull origin master --allow-unrelated-histories
+``` 

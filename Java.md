@@ -9,3 +9,13 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 
 ```
+
+
+``` css
+> javac -encoding UTF-8 Demo.java
+
+```
+
+```
+
+```

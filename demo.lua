@@ -1,0 +1,11 @@
+sb.append(" local rs = {} ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180728');  ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180727');  ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180726'); ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180725');  ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180724'); ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180723');  ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180722');  ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180721');  ");
+sb.append(" rs[#rs+1] =  redis.call('get','store.month.avg:1000001:20180720'); ");
+sb.append(" return rs");

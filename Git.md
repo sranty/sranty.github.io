@@ -82,3 +82,40 @@ git config --global http.postBuffer 157286400
 ```
 git pull origin master --allow-unrelated-histories
 ``` 
+
+
+# Init Git And add remote
+
+``` shell
+$ > git init
+Initialized empty Git repository in D:/demo/demo/.git/
+$ > git remote add origin http://git.ku-link.win/cvs-android
+$ > git pull
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From http://git.ku-link.win/cvs-android
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+$ > git pull origin master
+From http://git.ku-link.win/cvs-android
+ * branch            master     -> FETCH_HEAD
+$ > git branch --set-upstream-to=origin/master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+$ > git pull
+Already up to date.
+$ > git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+
+```
